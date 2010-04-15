@@ -1,0 +1,39 @@
+<oaf_info>
+    <oaf_server iid="OAFIID:GNOME_POTDApplet_Factory" type="exe"
+                    location="/usr/lib/potd/potd.py">
+
+        <oaf_attribute name="repo_ids" type="stringv">
+            <item value="IDL:Bonobo/GenericFactory:1.0"/>
+            <item value="IDL:Bonobo/Unknown:1.0"/>
+        </oaf_attribute>
+        <oaf_attribute name="name" type="string" value="POTD Applet Factory"/>
+        <oaf_attribute name="name-en_CA" type="string" value="POTD Applet Factory"/>
+        <oaf_attribute name="name-en_GB" type="string" value="POTD Applet Factory"/>
+        <oaf_attribute name="name-es" type="string" value="Fábrica de miniaplicaciones POTD"/>
+        <oaf_attribute name="description" type="string" value="POTD Applet Factory"/>
+        <oaf_attribute name="description-en_CA" type="string" value="POTD Applet Factory"/>
+        <oaf_attribute name="description-en_GB" type="string" value="POTD Applet Factory"/>
+        <oaf_attribute name="description-es" type="string" value="Fábrica de miniaplicaciones POTD"/>
+
+    </oaf_server>
+
+    <oaf_server iid="OAFIID:GNOME_POTDApplet"
+                    type="factory" location="OAFIID:GNOME_POTDApplet_Factory">
+
+        <oaf_attribute name="repo_ids" type="stringv">
+            <item value="IDL:GNOME/Vertigo/PanelAppletShell:1.0"/>
+            <item value="IDL:Bonobo/Control:1.0"/>
+            <item value="IDL:Bonobo/Unknown:1.0"/>
+        </oaf_attribute>
+    
+        <oaf_attribute name="name" type="string" value="Picture Of The Day Background Changer"/>
+        <oaf_attribute name="name-en_GB" type="string" value="Picture Of The Day Background Changer"/>
+        <oaf_attribute name="name-es" type="string" value="Cambiador de Fondo de Pantalla basado en la imagen del dia"/>
+        <oaf_attribute name="description" type="string" value="Picture Of The Day Background Changer (Support apod.nasa.gov, Wikipedia and epod.usra.edu)"/>
+        <oaf_attribute name="description-en_GB" type="string" value="Picture Of The Day Background Changer (Support apod.nasa.gov, Wikipedia and epod.usra.edu)"/>
+        <oaf_attribute name="description-es" type="string" value="Cambiador de Fondo de Pantalla a la imagen del dia (Soporta apod.nasa.gov, Wikipedia y epod.usra.edu)"/>
+        <oaf_attribute name="panel:category" type="string" value="Utility"/>
+        <oaf_attribute name="panel:icon" type="string" value="gnome-applets.png"/>
+
+    </oaf_server>
+</oaf_info>
